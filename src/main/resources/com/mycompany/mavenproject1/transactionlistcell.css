@@ -1,0 +1,59 @@
+/* transactionlistcell.css */
+
+/* Container for each transaction row */
+.cell_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 7);
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+/* Icon container inside each transaction row */
+.trans_icon_container {
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: center;
+    -fx-spacing: 5;
+}
+
+/* Date label in transaction */
+.trans_date_lbl {
+    -fx-text-fill: #AAAAAA;
+    -fx-font-weight: 700;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1em;
+}
+
+/* Payee address label */
+.trans_pAddress_lbl {
+    -fx-text-fill: #000000;
+    -fx-font-weight: 700;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1em;
+}
+
+/* Horizontal rule inside the cell */
+.cell_container Line {
+    -fx-stroke: #EEEEEE;
+}
+
+/* Amount label styling */
+.trans_amount_lbl {
+    -fx-background-color: #4D2796;
+    -fx-background-radius: 2;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 5;
+    -fx-font-weight: 700;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1em;
+    -fx-transition: all 0.25s ease;
+}
+
+.trans_amount_lbl:hover {
+    -fx-background-color: #796BE5;
+}
+
+/* Icon inside amount label (FontAwesome) */
+.trans_amount_lbl FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}

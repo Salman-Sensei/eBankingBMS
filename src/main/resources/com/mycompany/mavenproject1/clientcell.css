@@ -1,0 +1,65 @@
+/* Clientcell.css */
+
+/* Container for each client row */
+.client_cell_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 7);
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+/* The HBox inside each client cell */
+.client_cell_container HBox {
+    -fx-spacing: 25;
+    -fx-alignment: center-left;
+}
+
+/* Labels inside the HBox */
+.client_cell_container HBox Label {
+    -fx-text-fill: #444444;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.6em;
+}
+
+/* Account display labels (smaller text) */
+.acc_display_lbl {
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #555555;
+}
+
+/* Delete button style */
+.delete_btn {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #FF0000;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-transition: all 0.25s ease;
+}
+
+/* Icon inside delete button */
+.delete_btn FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
+
+.delete_btn:hover {
+    -fx-background-color: #CC0000;
+    -fx-cursor: hand;
+}
+
+/* Edit button style */
+.edit_btn {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #4D2796;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-transition: all 0.25s ease;
+}
+
+.edit_btn FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
+
+.edit_btn:hover {
+    -fx-background-color: #796BE5;
+    -fx-cursor: hand;
+}

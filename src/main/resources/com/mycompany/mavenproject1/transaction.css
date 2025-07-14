@@ -1,0 +1,52 @@
+/* transaction.css */
+
+/* Main transactions container */
+.transactions_container {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 20;
+}
+
+/* Header text in transactions */
+.transactions_container Text {
+    -fx-fill: #333333;
+    -fx-font-size: 2.5em;
+    -fx-font-family: "Calibri Light";
+}
+
+/* ListView of transactions */
+.transactions_container .list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 1;
+    -fx-border-color: #DDDDDD;
+    -fx-padding: 10;
+}
+
+/* Each transaction list‐cell */
+.transactions_container .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-pref-width: 808;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 1.3em;
+    -fx-text-fill: #333333;
+    -fx-padding: 15 10;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #DDDDDD;
+    -fx-transition: all 0.25s ease;
+}
+
+.transactions_container .list-cell:hover {
+    -fx-background-color: #F5F5F5;
+    -fx-cursor: hand;
+}
+
+/* If you have an inner image background */
+.innerimage {
+    -fx-background-image: url("Images/newR.jpg");
+    -fx-background-size: cover;
+}
+
+/* Background image class for container */
+.backgroundclassimage {
+    -fx-background-image: url("Images/back5new2.jpg");
+    -fx-background-size: cover;
+}

@@ -1,0 +1,96 @@
+/* createclient.css */
+
+/* Container for “Create Client” form */
+.create_client_container {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+/* Heading text in Create Client section */
+.create_client_container Text {
+    -fx-font-size: 1.2em;
+    -fx-fill: #555555;
+    -fx-font-family: "Calibri Light";
+}
+
+/* Form fields layout */
+.create_client_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #880000;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+
+/* TextFields */
+.create_client_container TextField {
+    -fx-pref-width: 258;
+    -fx-pref-height: 35;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-transition: all 0.25s ease;
+}
+
+.create_client_container TextField:hover {
+    -fx-background-color: #F5F5F5;
+}
+
+/* Special label styling (payee address) */
+.payee_address_lbl {
+    -fx-pref-width: 258;
+    -fx-pref-height: 38;
+    -fx-padding: 5;
+    -fx-background-color: #888888;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+}
+
+/* Primary “Create” button */
+.create_client_container Button {
+    -fx-background-color: linear-gradient(
+        to right,
+        #4D2796 0%,
+        #4786E8 100%
+    );
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-pref-width: 258;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-transition: all 0.25s ease;
+}
+
+.create_client_container Button:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #796BE5 0%,
+        #8ABEF7 100%
+    );
+    -fx-cursor: hand;
+}
+
+/* Error label (validation) */
+.error_lbl {
+    -fx-text-fill: #FF0000;
+    -fx-font-size: 1em;
+}
+
+/* Background images reused */
+.admin_back {
+    -fx-background-image: url("Images/adminback.jpg");
+    -fx-background-size: cover;
+}
+.container_innerback {
+    -fx-background-image: url("Images/back5.jpeg");
+    -fx-background-size: cover;
+}
+
+/* Utility text */
+.whitetext {
+    -fx-fill: #000000;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+}

@@ -1,0 +1,193 @@
+/* clientmenu.css */
+
+/* Container background */
+.main_menu_container {
+    -fx-background-color: #EEEEEE;
+    -fx-alignment: center;
+    -fx-padding: 10;
+}
+
+/* Left nav background */
+.left_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 4);
+}
+
+/* Title bar styling (for “SK Bank Client Menu” or similar) */
+.title_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20 28 8 8;
+    -fx-alignment: center;
+    -fx-padding: 10;
+}
+
+.title_container Text {
+    -fx-fill: #4D2796;
+    -fx-font-size: 2.5em;
+    -fx-font-family: "Arial Black";
+}
+
+/* Navigation button group */
+.menu_container {
+    -fx-padding: 10 10 10 20;
+    -fx-spacing: 20;
+}
+
+/* Default nav button style */
+.menu_container Button {
+    -fx-pref-width: 115;
+    -fx-pref-height: 48;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+    -fx-alignment: center-left;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 4);
+    -fx-transition: all 0.25s ease;
+}
+
+.menu_container Button:hover {
+    -fx-background-color: #F5F5F5;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 8, 0, 0, 6);
+}
+
+.menu_container Button FontAwesomeIconView {
+    -fx-fill: #333333;
+}
+
+/* Alternate menu button (highlighted) */
+.alt_menu_btn {
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+    -fx-background-color: linear-gradient(
+        to left,
+        #4D2796 0%,
+        #EE4758 100%
+    );
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+    -fx-alignment: center-left;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 4);
+    -fx-transition: all 0.25s ease;
+}
+
+.alt_menu_btn:hover {
+    -fx-background-color: linear-gradient(
+        to left,
+        #4786E8 0%,
+        #D64C7F 100%
+    );
+}
+
+/* Main button style */
+.main_btn {
+    -fx-background-color: linear-gradient(
+        to right,
+        #EE4758 0%,
+        #4D2796 100%
+    );
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+    -fx-alignment: center-left;
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 4);
+    -fx-transition: all 0.25s ease;
+}
+
+.main_btn:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #D64C7F 0%,
+        #796BE5 100%
+    );
+}
+
+/* Report Bug/Suggestion section */
+.report_container {
+    -fx-background-color: #EEFFEE;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-spacing: 10;
+    -fx-padding: 10 0 18 0;
+}
+
+.report_container Text {
+    -fx-font-weight: bold;
+    -fx-fill: #333333;
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Calibri Light";
+}
+
+.report_container Label {
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-text-fill: #555555;
+}
+
+.report_container Button {
+    -fx-pref-width: 80;
+    -fx-background-color: #4D2796;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1em;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 4, 0, 0, 4);
+    -fx-transition: all 0.25s ease;
+}
+
+.report_container Button:hover {
+    -fx-background-color: #796BE5;
+    -fx-cursor: hand;
+}
+
+.report_container Button FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
+
+/* Admin button styles used in client menu */
+.admin_btn {
+    -fx-background-color: linear-gradient(
+        to right,
+        #4D2796 0%,
+        #4786E8 100%
+    );
+    -fx-text-fill: #FFFFFF;
+    -fx-transition: all 0.25s ease;
+}
+
+.admin_btn:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #796BE5 0%,
+        #8ABEF7 100%
+    );
+}
+
+.admin_glyph {
+    -fx-fill: linear-gradient(
+        to right,
+        #4D2796 0%,
+        #4786E8 100%
+    );
+}
+
+.admin_alt_btn {
+    -fx-background-color: linear-gradient(
+        to right,
+        #8ABEF7 0%,
+        #796BE5 100%
+    );
+    -fx-text-fill: #FFFFFF;
+    -fx-transition: all 0.25s ease;
+}
+
+.admin_alt_btn:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #796BE5 0%,
+        #4D2796 100%
+    );
+}

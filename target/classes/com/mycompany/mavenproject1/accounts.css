@@ -1,0 +1,117 @@
+/* Account.css */
+
+.mainFxmlClass {
+    /* (No global styles needed here) */
+}
+
+.accounts_view_container {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 20;
+}
+
+/* Heading text inside accounts container */
+.accounts_view_container Text {
+    -fx-fill: #555555;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+    -fx-font-style: oblique;
+}
+
+/* Left‐pane boxes in accounts view */
+.accounts_view_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #888888;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+
+/* Text inside each VBox */
+.accounts_view_container VBox Text {
+    -fx-font-size: 1.4em;
+    -fx-fill: #333333;
+}
+
+/* Labels inside each VBox */
+.accounts_view_container VBox Label {
+    -fx-font-size: 1.4em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* TextField styling */
+.accounts_view_container TextField {
+    -fx-pref-width: 238;
+    -fx-pref-height: 35;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-font-size: 1em;
+}
+
+/* Primary button in accounts container */
+.accounts_view_container Button {
+    -fx-background-color: linear-gradient(
+        to right,
+        #EE4758 0%,
+        #4D2796 100%
+    );
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-pref-width: 230;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-transition: all 0.25s ease;
+}
+
+.accounts_view_container Button:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #796BE5 0%,
+        #D64C7F 100%
+    );
+    -fx-cursor: hand;
+}
+
+/* Background image (if used) */
+.back {
+    -fx-background-image: url("Images/Untitled.jpg");
+    -fx-background-size: cover;
+}
+
+.no_back {
+    -fx-background-color: linear-gradient(
+        to top,
+        #C4C5C7 0%,
+        #DCDDDF 52%,
+        #EBEBEB 100%
+    );
+}
+
+.grad {
+    -fx-background-color: linear-gradient(
+        to top,
+        #C4C5C7 0%,
+        #DCDDDF 52%,
+        #EBEBEB 100%
+    );
+}
+
+.txt {
+    -fx-background-color: grey;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.6em;
+    -fx-font-style: oblique;
+}
+
+/* Background image class reused */
+.backgroundclassimage {
+    -fx-background-image: url("Images/back5new2.jpg");
+    -fx-background-size: cover;
+}
+/* Make all Text in the accounts pane bold and black */
+/* Make any Text with styleClass="txt" bold and pure black */
+.txt {
+    -fx-fill: #000000;         /* pure black text */
+    -fx-font-weight: bold;     /* bold */
+    -fx-font-size: 1.6em;      /* keep your desired size */
+    -fx-font-style: oblique;   /* if you want to keep oblique */
+}

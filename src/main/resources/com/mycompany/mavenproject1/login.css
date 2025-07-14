@@ -1,0 +1,129 @@
+/* login.css */
+
+/* ──────────────────────────────────────────────
+   1) Overall login window background
+   ────────────────────────────────────────────── */
+.mainFxmlClass {
+    -fx-background-color: #EEEEEE;
+}
+
+/* ──────────────────────────────────────────────
+   2) Left-panel (“login-container”) styling
+   ────────────────────────────────────────────── */
+/* Use a solid dark charcoal. Align children at top-left. */
+.login-container {
+    -fx-background-color: #2C2D2D;      
+    -fx-alignment: top-left;            /* place children in the top-left corner */
+    -fx-padding: 10 0 0 10;             /* 10px from top, 10px from left (push icon/text in a bit) */
+    -fx-spacing: 5;                     /* small vertical gap between icon and “SK Bank” */
+    -fx-background-radius: 0;           /* no rounding */
+}
+
+/* ──────────────────────────────────────────────
+   3) BANK icon positioning
+   ────────────────────────────────────────────── */
+.login-container FontAwesomeIconView {
+    -fx-fill: #FFFFFF;                  /* White icon on charcoal */
+    /* No extra translation: padding handles the offset. */
+}
+
+/* ──────────────────────────────────────────────
+   4) “SK Bank” label styling & position
+   ────────────────────────────────────────────── */
+.login-container .alabel {
+    -fx-text-fill: #FFFFFF;             /* White text on dark background */
+    -fx-font-size: 24px;                /* Increase font size for prominence */
+    -fx-font-family: "Arial Black";     
+    /* Nudge down 5px to sit just below the icon */
+    -fx-translate-y: 5px;
+}
+
+/* ──────────────────────────────────────────────
+   5) Increase “Choose account type,” “Username,” “Password” font sizes
+   ────────────────────────────────────────────── */
+/* These live in the right‐hand form area */
+.login_form_container Label,
+.login_form_container ChoiceBox {
+    -fx-text-fill: #333333;            /* Dark gray text so it’s visible */
+    -fx-font-family: "Calibri Light";  
+    -fx-font-size: 1.4em;              /* Larger than before */
+    -fx-font-weight: bold;             /* Make them bold as requested */
+}
+
+/* ChoiceBox itself (for the “Choose account type” control) */
+.account_selector {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-pref-width: 200;               /* ensure it’s wide enough for text */
+    -fx-pref-height: 40;               /* a bit taller so the prompt text isn’t cramped */
+}
+
+/* Prompt‐text color inside ChoiceBox */
+.account_selector .text {
+    -fx-fill: #333333;
+}
+
+/* ──────────────────────────────────────────────
+   6) Input field styling (Username/Password fields)
+   ────────────────────────────────────────────── */
+.login_form_container TextField,
+.login_form_container PasswordField {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #999999;
+    -fx-pref-height: 40;              /* taller than before for comfort */
+    -fx-font-size: 1.3em;              /* larger text inside the field */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-transition: all 0.25s ease;
+}
+
+.login_form_container TextField:hover,
+.login_form_container PasswordField:hover {
+    -fx-background-color: #F5F5F5;     /* Lighten on hover */
+}
+
+
+/* Base button style: solid black background, white text */
+.login_form_container Button {
+    -fx-background-color: #000000;           /* black */
+    -fx-text-fill: #FFFFFF;                  /* white text */
+    -fx-min-width: 350;
+    -fx-pref-width: 350;
+    -fx-min-height: 40;
+    -fx-pref-height: 40;
+    -fx-max-height: 40;
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Calibri Light";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 3);
+    -fx-transition: all 0.2s ease;
+}
+
+/* Hover state: slightly lighter gray with white text */
+.login_form_container Button:hover {
+    -fx-background-color: #333333;  /* dark gray */
+    -fx-text-fill: #FFFFFF;         /* keep text white */
+    -fx-cursor: hand;
+}
+
+
+
+/* ──────────────────────────────────────────────
+   8) “Forgot Password” link styling
+   ────────────────────────────────────────────── */
+.login_form_container Hyperlink {
+    -fx-text-fill: #EE4758;             /* pink accent */
+    -fx-font-size: 1.1em;               /* slightly larger */
+}
+
+/* 9) Spacing inside the form’s VBox: reduce top padding slightly */
+.login_form_container {
+    -fx-spacing: 20;            /* 20px gap between each control */
+    -fx-padding: 10 0 0 0;       /* reduced from 60 to 40px top padding */
+    -fx-alignment: top-center;
+}
+
+/* ──────────────────────────────────────────────
+   10) Ensure any leftover rules are removed or overridden
+   ────────────────────────────────────────────── */
+/* Remove any contradictory -fx-alignment or padding rules elsewhere in older CSS. */

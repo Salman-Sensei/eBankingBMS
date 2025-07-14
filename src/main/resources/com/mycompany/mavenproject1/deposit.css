@@ -1,0 +1,176 @@
+/* deposit.css */
+
+/* Container background */
+.deposit_container {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+/* Search box area */
+.search_box {
+    -fx-spacing: 10;
+    -fx-border-color: #AAAAAA;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 5 0 15 0;
+}
+
+/* Labels in deposit (search prompt, etc.) */
+.deposit_container Text {
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.6em;
+    -fx-fill: #333333;
+}
+
+/* Search TextField */
+.search_box TextField {
+    -fx-pref-width: 200;
+    -fx-pref-height: 35;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1em;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-transition: all 0.25s ease;
+}
+
+.search_box TextField:hover {
+    -fx-background-color: #F5F5F5;
+}
+
+/* Primary button in deposit */
+.deposit_container Button {
+    -fx-background-color: linear-gradient(
+        to right,
+        #4D2796 0%,
+        #4786E8 100%
+    );
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-font-size: 1.6em;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri Light";
+    -fx-pref-width: 206;
+    -fx-transition: all 0.25s ease;
+}
+
+.deposit_container Button:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #796BE5 0%,
+        #8ABEF7 100%
+    );
+    -fx-cursor: hand;
+}
+
+/* Result/List display */
+.result_box {
+    -fx-spacing: 15;
+    -fx-padding: 10 0 0 0;
+}
+
+.deposit_container .list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 1;
+    -fx-border-color: #DDDDDD;
+}
+
+.deposit_container .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 20 10;
+    -fx-font-size: 1.3em;
+    -fx-font-family: "Roboto";
+    -fx-text-fill: #333333;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #DDDDDD;
+    -fx-transition: all 0.25s ease;
+}
+
+.deposit_container .list-cell:hover {
+    -fx-background-color: #F5F5F5;
+    -fx-cursor: hand;
+}
+
+/* Background images */
+.admin_back {
+    -fx-background-image: url("Images/adminback.jpg");
+    -fx-background-size: cover;
+}
+
+.container_innerback {
+    -fx-background-image: url("Images/back5.jpeg");
+    -fx-background-size: cover;
+}
+
+.whitetext {
+    -fx-fill: #000000;
+    -fx-font-size: 1.7em;
+    -fx-font-family: "Calibri Light";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Assuming your “Search By Payee Address” text was white or too light */
+.deposit_container Text {
+    -fx-text-fill: #333333; /* main label */
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.6em;
+}
+
+/* Search TextField: white background, dark text */
+.search_box TextField {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-prompt-text-fill: #999999;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+}
+
+/* Style the Search button to match your theme */
+.search_box Button {
+    -fx-background-color: linear-gradient(
+        to right,
+        #4D2796 0%,
+        #4786E8 100%
+    );
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Calibri Light";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 3);
+    -fx-transition: all 0.2s ease;
+}
+
+.search_box Button:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #796BE5 0%,
+        #D64C7F 100%
+    );
+    -fx-cursor: hand;
+}
+
+/* =================================================
+   Fix for “Search by payee id” Text alignment
+   ================================================= */
+
+/* If your Text node “Search By Payee Address” was not in any style class, force it darker: */
+.search_box Text {
+    -fx-fill: #333333;
+}

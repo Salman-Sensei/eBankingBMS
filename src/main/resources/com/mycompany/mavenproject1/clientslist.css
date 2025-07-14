@@ -1,0 +1,57 @@
+/* Clientlists.css */
+
+/* Overall container background */
+.clients_container {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 20;
+}
+
+/* Title or header text inside clients container */
+.clients_container Text {
+    -fx-fill: #555555;
+    -fx-font-size: 1.8em;
+    -fx-font-family: "Calibri Light";
+}
+
+/* ListView styling inside clients container */
+.clients_container .list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 1;
+    -fx-border-color: #DDDDDD;
+}
+
+/* Each ListCell style */
+.clients_container .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10 15;
+    -fx-font-size: 1.7em;
+    -fx-font-family: "Roboto";
+    -fx-text-fill: #333333;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #DDDDDD;
+    -fx-transition: all 0.25s ease;
+}
+
+.clients_container .list-cell:hover {
+    -fx-background-color: #F5F5F5;
+    -fx-cursor: hand;
+}
+			
+/* Background for admin pages */
+.admin_back {
+    -fx-background-image: url("Images/adminback.jpg");
+    -fx-background-size: cover;
+}
+
+/* Inner container background */
+.container_innerback {
+    -fx-background-image: url("Images/back5.jpeg");
+    -fx-background-size: cover;
+}
+
+/* A utility class for heading text in white/black depending on background */
+.whitetext {
+    -fx-fill: #000000;
+    -fx-font-size: 1.7em;
+    -fx-font-family: "Calibri Light";
+}
