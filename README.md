@@ -128,5 +128,25 @@ The project follows the **Model-View-Controller (MVC)** and **Client-Server** ar
    - **JavaFX 21 SDK**  
    - **SQL Server 2022 (Developer Edition)**  
 4. **Configure your database connection** in the DAO or configuration file.  
-5. **Run the application** → The login window should appear.  
+5. **Run the application** → The login window should appear.
+
+## 🖼️ Interfaces  
+
+### 🧾 Login Interface  
+![Login Interface](https://raw.githubusercontent.com/Salman-Sensei/eBankingBMS/main/Login.png)
+
+### 👤 Client Dashboard  
+![Client Dashboard](https://raw.githubusercontent.com/Salman-Sensei/eBankingBMS/main/Client_Account.png)
+
+### 💸 Fund Transfer Window  
+![Fund Transfer Window](https://raw.githubusercontent.com/Salman-Sensei/eBankingBMS/main/Transfer.png)
+
+### 🛠️ Admin Panel  
+![Admin Panel](https://raw.githubusercontent.com/Salman-Sensei/eBankingBMS/main/Admin.png)
+
+### 📊 Transactions View 
+![Transactions View](https://raw.githubusercontent.com/Salman-Sensei/eBankingBMS/main/Client.png)
+
+### ⚙️ Deposit Money View 
+![Settings Interface](https://raw.githubusercontent.com/Salman-Sensei/eBankingBMS/main/Deposit.png)
 
