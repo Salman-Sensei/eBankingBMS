@@ -51,14 +51,7 @@ The project follows the **Model-View-Controller (MVC)** and **Client-Server** ar
   - `adminlogin` – stores admin credentials  
   - `transactions` – records all fund transfers  
 
-### 🗂 Example Table Schema
-```sql
-CREATE TABLE Users (
-  UserID INT IDENTITY(1,1) PRIMARY KEY,
-  Username NVARCHAR(50) NOT NULL UNIQUE,
-  PasswordHash NVARCHAR(255) NOT NULL,
-  Role NVARCHAR(20) NOT NULL
-);
+---
 
 ## ⚙️ Design Patterns Used  
 
